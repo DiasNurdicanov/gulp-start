@@ -1,8 +1,8 @@
 {
-  "name": "puteshestviye",
+  "name": "project-name",
   "version": "0.1.0",
   "private": true,
-  "description": "puteshestviye",
+  "description": "project-name",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "9.3.x",
