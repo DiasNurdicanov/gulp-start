@@ -40,8 +40,7 @@
     "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "npm run build && gulp serve",
-    "update": "ncu -u"
+    "start": "npm run build && gulp serve"
   },
   "browserslist": [
     "defaults",
