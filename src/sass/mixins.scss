@@ -1,0 +1,29 @@
+@mixin font-face($name, $filename, $weight: null, $style: null, $exts: woff2 woff) {
+  $src: null;
+
+  @each $ext in $exts {
+    $src: append($src, url(quote("../fonts/" + $filename + "." + $ext)) format(quote($ext)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@mixin container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+@function get-vw($target) {
+  $vw-context: (1920*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+@function get-vh($target) {
+  $vw-context: (1080*.01) * 1px;
+  @return ($target/$vw-context) * 1vh;
+}

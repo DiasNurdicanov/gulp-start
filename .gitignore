@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+yarn.lock
+*.sublime*
+# css/*.css
+node_modules/
+Thumbs.db
+
+stuff/
+todo.*

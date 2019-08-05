@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+
+  }
+}

@@ -1,0 +1,11 @@
+include data/pages.pug
+
+doctype html
+html(lang="ru")
+  include commons/head.pug
+  body
+    h1 Страницы:
+    ol
+      each page in pages
+        li
+          a(href= page.href) #{page.name} --- #{page.href}
