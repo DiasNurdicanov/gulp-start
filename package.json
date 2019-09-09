@@ -61,6 +61,7 @@
   },
   "dependencies": {
     "natives": "^1.1.6",
+    "object-fit-images": "^3.2.4",
     "svg4everybody": "^2.1.7",
     "swiper": "^4.5.0"
   },

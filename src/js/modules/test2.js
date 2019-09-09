@@ -1,3 +1,5 @@
-import testModule from 'test'
+import testModule from './test.js';
 
-testModule();
+export default function() {
+  testModule();
+};

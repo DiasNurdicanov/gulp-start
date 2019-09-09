@@ -25,7 +25,8 @@ var pug = require('gulp-pug');
 var isDev = true;
 var isProd = !isDev;
 
-var webpack = require('webpack-stream');
+var webpack = require('webpack');
+var webpackStream = require('webpack-stream');
 var webpackConfig = {
   output: {
     filename: 'script.js'
@@ -74,7 +75,8 @@ gulp.task("images:copy", function() {
 
 gulp.task("js", function () {
   return gulp.src("src/js/script.js")
-    .pipe(webpack(webpackConfig))
+    .pipe(plumber())
+    .pipe(webpackStream(webpackConfig))
     .pipe(gulp.dest("build/js"));
 });
 

@@ -1,3 +1,5 @@
-import test from './modules/test.js'
+import test from './modules/test2.js';
+import objectFitImages from 'object-fit-images';
 
 test()
+objectFitImages()
